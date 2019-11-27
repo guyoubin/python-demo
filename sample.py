@@ -8,3 +8,5 @@ def sum_only_positive(num1, num2):
     else:
         return None
 
+def sum(num1, num2):
+    return num1+num2
