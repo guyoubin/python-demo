@@ -1,4 +1,4 @@
-var test_variable
+test_variable
 
 def sum(num1, num2):
     return num1 + num2
