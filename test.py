@@ -8,3 +8,7 @@ def test_sum_positive_ok():
 
 def test_sum_positive_fail():
     assert sum_only_positive(-1, 2) is None
+
+    
+def test_sum():
+    asser sum(4,4) == 8
