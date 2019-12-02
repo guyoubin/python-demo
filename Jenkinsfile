@@ -9,7 +9,7 @@ pipeline {
       stage('Static Code Analysis') {
          steps {
             sh 'cd /root/Jenkins/workspace/python_pipeline && coverage run *.py && coverage xml'
-            sh 'sonar-scanner -Dsonar.host.url=http://192.168.195.138:9000 -Dsonar.projectKey=python-demo s-Donar.sources=.'
+            sh 'sonar-scanner -Dsonar.host.url=http://192.168.195.138:9000 -Dsonar.projectKey=python-demo -Dsonar.sources=.'
          }
       }
    }
